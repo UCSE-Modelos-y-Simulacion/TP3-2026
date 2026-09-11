@@ -1,0 +1,36 @@
+{
+  "materia": "Modelos y Simulación",
+  "institucion": "Universidad Católica de Santiago del Estero (UCSE)",
+  "cicloLectivo": 2026,
+  "trabajoPractico": "TP Nº 3 - Generación de Números Pseudoaleatorios",
+  "alumnoAsignado": "Alumno #4",
+  "ejercicioId": 4,
+  "tituloEjercicio": "Algoritmo de Multiplicador Constante",
+  "estudiante": {
+    "nombreCompleto": "Mariano Alfredo Sumbaino",
+    "legajoODni": "39808671"
+  },
+  "calificacion": "100 / 100 Pts (Aprobado)",
+  "timestamp": "2026-09-11T22:06:29.352Z",
+  "respuestasRegistradas": {
+    "r0_yi": "68277895",
+    "r0_next_x": "2778",
+    "r0_ri": "0.2778",
+    "r1_yi": "19348770",
+    "r1_next_x": "3487",
+    "r1_ri": "0.3487",
+    "r2_yi": "24286955",
+    "r2_next_x": "2869",
+    "r2_ri": "0.2869",
+    "r3_yi": "19982585",
+    "r3_next_x": "9825",
+    "r3_ri": "0.9825",
+    "r4_yi": "68431125",
+    "r4_next_x": "4311",
+    "r4_ri": "0.4311",
+    "r5_yi": "30026115",
+    "r5_next_x": "0261",
+    "r5_ri": "0.0261"
+  },
+  "firmaDigitalSHA256": "79fb014fb736280590623706ad4ec20e0cb9f2e183cbc74c612990a076816feb"
+}
