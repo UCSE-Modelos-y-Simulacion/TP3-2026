@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laboratorio Web Autoevaluativo de Generación de Números Pseudoaleatorios - Modelos y Simulación UCSE 2026">
+  <title>Laboratorio de Números Pseudoaleatorios | TP Nº 3 - UCSE</title>
+  
+  <!-- Google Fonts: Inter, Outfit y JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header Principal -->
+    <header class="app-header">
+      <div class="header-brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="4"></rect>
+            <circle cx="8" cy="8" r="1.5"></circle>
+            <circle cx="16" cy="16" r="1.5"></circle>
+            <circle cx="8" cy="16" r="1.5"></circle>
+            <circle cx="16" cy="8" r="1.5"></circle>
+            <circle cx="12" cy="12" r="1.5"></circle>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Modelos y Simulación <span>// TP Nº 3</span></h1>
+          <p class="brand-subtitle">Laboratorio Autoevaluativo: Generación de Números Pseudoaleatorios</p>
+        </div>
+      </div>
+
+      <div class="header-meta">
+        <span class="badge badge-primary">Ingeniería en Informática</span>
+        <span class="badge badge-secondary">UCSE 2026</span>
+        <span class="badge badge-emerald">Web-First Autograding</span>
+      </div>
+    </header>
+
+    <!-- Layout de Dos Columnas -->
+    <div class="workspace-layout">
+      <!-- Barra Lateral de Selección de Alumno / Ejercicio -->
+      <aside class="sidebar-nav">
+        <div class="nav-section-label">ASIGNACIÓN DE ALUMNOS (1 A 8)</div>
+        <nav class="nav-list" id="exercises-nav">
+          <!-- Generado dinámicamente por app.js -->
+        </nav>
+      </aside>
+
+      <!-- Área de Trabajo Principal -->
+      <main class="main-workspace">
+        <!-- Tarjeta de Cabecera del Ejercicio -->
+        <section class="exercise-card">
+          <div class="exercise-header-top">
+            <div class="exercise-title-group">
+              <h2 id="exercise-title">Cargando ejercicio...</h2>
+              <div class="badge badge-primary" id="exercise-category" style="margin-top: 0.25rem;">Categoría</div>
+            </div>
+            <div class="exercise-assigned" id="exercise-assigned">Asignado a: Alumno #1</div>
+          </div>
+
+          <p class="exercise-description" id="exercise-desc">Descripción del ejercicio y objetivo pedagógico.</p>
+
+          <!-- Parámetros del Algoritmo -->
+          <div class="params-strip" id="exercise-params">
+            <!-- Píldoras de parámetros dinámicas -->
+          </div>
+
+          <!-- Panel Desplegable Teórico de Cátedra -->
+          <div class="biblio-guide" id="biblio-guide">
+            <div class="biblio-header">
+              <span class="biblio-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                📖 Dónde estudiar este tema en la teoría de cátedra
+              </span>
+              <span class="biblio-toggle">▼</span>
+            </div>
+            <div class="biblio-body">
+              <span class="biblio-cite-badge" id="biblio-cite">Diapositivas de Cátedra</span>
+              <p id="biblio-text">Texto teórico explicativo y fórmulas de referencia.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tarjeta del Workbench Interactivo (Tabla de Cómputo) -->
+        <section class="workbench-card">
+          <div class="workbench-toolbar">
+            <div class="workbench-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Tabla de Cómputo Paso a Paso
+            </div>
+
+            <!-- Widget de Calificación en Vivo -->
+            <div class="score-widget">
+              <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Calificación:</span>
+              <div class="score-bar-bg">
+                <div class="score-bar-fill" id="score-bar-fill"></div>
+              </div>
+              <span class="score-label" id="score-label">0 / 100 Pts</span>
+            </div>
+          </div>
+
+          <!-- Cuestionario Analítico Opcional (Hull-Dobell, BBS, etc.) -->
+          <div class="questions-box" id="questions-box" style="display: none;">
+            <!-- Preguntas analíticas dinámicas -->
+          </div>
+
+          <!-- Tabla de Cálculo Interactiva -->
+          <div class="table-responsive">
+            <table class="calc-table" id="calc-table">
+              <thead id="table-head">
+                <!-- Generado dinámicamente -->
+              </thead>
+              <tbody id="table-body">
+                <!-- Generado dinámicamente con inputs -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mensaje de Feedback Didáctico / Pistas -->
+          <div class="feedback-box" id="feedback-box"></div>
+
+          <!-- Barra de Acciones -->
+          <div class="actions-bar">
+            <button class="btn btn-primary" id="btn-validar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              🧪 Comprobar y Autoevaluar
+            </button>
+
+            <button class="btn btn-success" id="btn-certificado" disabled>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              📥 Descargar Comprobante (.json)
+            </button>
+          </div>
+        </section>
+
+        <!-- Visualizadores Gráficos en Canvas (Recompensa al completar) -->
+        <section class="visualizers-grid">
+          <!-- Visualizador 1: Órbita de Estados y Ciclos -->
+          <div class="vis-card">
+            <div class="vis-header">
+              <span class="vis-title">Órbita de Transiciones y Ciclos</span>
+              <span class="vis-badge">Xᵢ → Xᵢ₊₁</span>
+            </div>
+            <div class="canvas-container">
+              <canvas id="canvas-orbita" style="display: none;"></canvas>
+              <span class="vis-placeholder" id="vis-placeholder-orbita">Completa la tabla correctamente para activar la visualización de la órbita.</span>
+            </div>
+          </div>
+
+          <!-- Visualizador 2: Gráfico de Dispersión 2D -->
+          <div class="vis-card">
+            <div class="vis-header">
+              <span class="vis-title">Dispersión 2D de Pares Consecutivos</span>
+              <span class="vis-badge">rᵢ vs rᵢ₊₁</span>
+            </div>
+            <div class="canvas-container">
+              <canvas id="canvas-dispersion" style="display: none;"></canvas>
+              <span class="vis-placeholder" id="vis-placeholder-dispersion">Completa la tabla correctamente para observar los patrones de dispersión.</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal de Descarga de Comprobante -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-icon-header">
+        <div class="modal-badge-check">✓</div>
+        <div>
+          <h3 class="modal-title">¡Ejercicio Aprobado al 100%!</h3>
+          <p class="modal-subtitle">Genera tu comprobante digital firmado con hash criptográfico</p>
+        </div>
+      </div>
+
+      <form id="form-certificado" class="modal-form">
+        <div class="form-group">
+          <label class="form-label" for="student-nombre">Nombre y Apellido del Estudiante:</label>
+          <input type="text" class="form-input" id="student-nombre" placeholder="Ej: Juan Pérez" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="student-legajo">DNI o Número de Legajo:</label>
+          <input type="text" class="form-input" id="student-legajo" placeholder="Ej: 42123456" required>
+        </div>
+
+        <div class="hash-preview-box" id="hash-preview">
+          Generando firma digital SHA-256...
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="modal-close">Cancelar</button>
+          <button type="submit" class="btn btn-success">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Confirmar y Descargar JSON
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts Modulares -->
+  <script src="js/ejercicios_data.js?v=1.0"></script>
+  <script src="js/visualizadores.js?v=1.0"></script>
+  <script src="js/app.js?v=1.0"></script>
+</body>
+</html>

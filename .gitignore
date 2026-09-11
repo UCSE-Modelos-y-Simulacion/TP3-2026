@@ -1,0 +1,25 @@
+# Rúbricas maestras y claves privadas de cátedra (¡NUNCA SUBIR A GITHUB!)
+*master*.json
+rubric_tp3_master.json
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Entornos virtuales
+env/
+venv/
+.venv/
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

@@ -1,0 +1,360 @@
+{
+  "tp_metadata": {
+    "tp_id": "MS-2026-TP3",
+    "title": "TP N° 3: Generación de Números Pseudoaleatorios",
+    "catedra": "Modelos y Simulación - UCSE 2026",
+    "version": "1.0.0"
+  },
+  "security": {
+    "algorithm": "SHA-256 + Salted HMAC",
+    "protected": true
+  },
+  "max_score": 100,
+  "exercises": {
+    "1": {
+      "title": "Ejercicio 01: Cuadrados Medios (Von Neumann)",
+      "alumno": "Alumno #1",
+      "weight": 100,
+      "hashes": {
+        "r0_yi": "6d9877bc4e7117c15a5d8b94cdf460d27504a2c7ec69b1200c08452092d36ca5",
+        "r0_next_x": "411c87b8481efc225fcaca44de9709a246fa05e70273e0b154f213cebd3b8204",
+        "r0_ri": "2a7ee49ba098e7b2b85347b1ac9e4e0ccf5a8063e0c63cebbbcc991bebdf8019",
+        "r1_yi": "721761ff1630fe62084ec76deda08c2e55cf1be9e888fb93a8772795b187973d",
+        "r1_next_x": "5ed3b1119362cb8adeaf61b53e0247f3a1c8ede5be622643091c9063116a3fe5",
+        "r1_ri": "693676883bec734ada0518fdc793774b3d8e80307a9763853e9ae03fe5fa137d",
+        "r2_yi": "a47400711d16c41367ccf817d7a8c819617b208d6238742ab89476ba2dc29cd0",
+        "r2_next_x": "b3915d102ff712c3c2264f3dbab81b823cd4fdb67ba9ae6bdf78da50ffb28598",
+        "r2_ri": "4f22dd328647789ffcdc145f8657a96b9ab6feca4d03e1e8e90ddd6d56fcff4f",
+        "r3_yi": "6abeb2a7ff4ade25f1b0e287af253db1f1afa45e8ad0935d49d8b89c28a63280",
+        "r3_next_x": "df74a5f356739586ac64c94382461416357a98fb0550343d014c51e41e92bd07",
+        "r3_ri": "8d1d49d3a17de4b1994e8fa80db5942ae829f3610177f1cc2f333455df9b280b",
+        "r4_yi": "faa16ba05439052071cbb2611f7b6ec8ff33e510f4d2cba7455527817e676aae",
+        "r4_next_x": "cddc055aba8c55494ef22e27c813dc418874e63314632aa2e07ddcc233df2289",
+        "r4_ri": "e54ee3f2e1ec2237f570e7c25ffd4b3f42d73434b8375f97d3952e53b32c5a48",
+        "r5_yi": "74a75819742913c765b640eaf0e63d8afdba1539c560974d7cad344b54ffbda7",
+        "r5_next_x": "efd64e2338b4943501e9b4fed533ab1708cec85adb4fdbe32ab946e2f7903456",
+        "r5_ri": "aa042dd022aa11fc7de151c4147ddab6c2f76518770b9e3ea1480f564e83ea11",
+        "r6_yi": "70aaa0f27bb2f3cdd1fb03c38dd4d200308b2979e641faa9f5a19f4d5f908f50",
+        "r6_next_x": "03db0e2e80cdcec9e503dd18a8a9cc826f2530f247e4b99f8b45eac279870b70",
+        "r6_ri": "7b4ce55940746cb5eef88a6f0a37d2329566251726ee0302f6268e099bf4e69d",
+        "r7_yi": "7c3360e06dfa6a011c88471c7b0f60fe992d0b080aeba7a33444513663831c37",
+        "r7_next_x": "e7f4b272c99f220fe4e5f3e053aaf7b063ea7c868ab216f12db16b042484abec",
+        "r7_ri": "9efc53d30de2f7f31f192e7bb81386460840eae93d0b5bd23bb8ff280508584b"
+      },
+      "alt_hashes": {
+        "r2_next_x": {
+          "base_key": "r2_next_x",
+          "hash": "67726a501672d5f251eb6b06b0991631a5ec96aed2a0535e2b9e751c4186fdca"
+        },
+        "r4_next_x": {
+          "base_key": "r4_next_x",
+          "hash": "1548ffaddb5afb4565ac1df0a423df4598d2bac27c9b7f04f8b4c550fc304f97"
+        }
+      },
+      "feedback": "Consultar PDF de Cátedra Diapositivas 7 a 9 (Coss Bu Cap. 2). Atención a centrado y padding de ceros."
+    },
+    "2": {
+      "title": "Ejercicio 02: Cuadrados Medios (Degeneración)",
+      "alumno": "Alumno #2",
+      "weight": 100,
+      "hashes": {
+        "q_degen_iter": "35761981d92a9da0dccba6aac2cc4b579602f3beae93a1d94ba565b438858fa4",
+        "q_degen_valor": "f9c31e65a44457ebd799c8793c09156ac3465dd0e8c0a104a0404b8212970ecd",
+        "r0_yi": "681564582b01e7e3c20b236f7f931015f70ef850b4eb854291dd0c86c5f7c5be",
+        "r0_next_x": "7eaaff2876fc3a77ba8f7a1e5334801e907be314cd957759cd4b79f04e35e664",
+        "r0_ri": "6ebabbc6292cedf9d408de0e6e8094e15fa77aca07d03dc4d8e08735db8274d9",
+        "r1_yi": "a8eaa2ff4c36e8d94b2d40963a4397fbe6560c9026db0238031e59abb5a423d9",
+        "r1_next_x": "546b465b89c2e6084a51a270067d3b206b015096d72289b963b53998968cbda2",
+        "r1_ri": "a211e6b31bfcedcdce027a48c6347eda2ff7fa5d4baaf5fc446be7d2528e8d1b",
+        "r2_yi": "32f4b43d3f10151d9ae7fd029fa22fd1e939c2846a1173c1f98375ad168277f7",
+        "r2_next_x": "af7d7a258f4d7d0ba73bfce9480b4779e20e0da2f47c6670e5da0dbea9b334e4",
+        "r2_ri": "7f0c75667f8f4a98d2573194b71398d2f745f1e815e2d6759f28af13073cb91a",
+        "r3_yi": "5fa12fa46f3530024ae1d8b5e9ce96dc1e2ecf7e510399b630925996f68783af",
+        "r3_next_x": "bb244766fc4f2ab9a0b9e27516a825c147a91897734449a5cb661b2bb086d6cc",
+        "r3_ri": "22cd44f88f00112bb52520034f4c37bd1644f55253a4d6adde5aacf30a9a19f4",
+        "r4_yi": "0eca837df5a0039cb9fc3e2b545644832dba383c36abcb70e8152177f2a8f3bd",
+        "r4_next_x": "5ef99ce396826b8ecc164d95c9cb91bb1ca9a62083dfc25f8dc79466502fd099",
+        "r4_ri": "ace8c78fc25f0bcfb4af704a1289e2b40d684c2590b58ae579d90c41cbd551f9",
+        "r5_yi": "1e5ca4499c85820b2b22bb921ceb3397a3aa4605956dec07c20646af59d64bae",
+        "r5_next_x": "803d18ca42e89ca5d35e318ae2360b6af6253ffd80ffcdc7a6703e9c875cef75",
+        "r5_ri": "e4e1f564620a29cbb8c7a2c7dc4f64c3ed7201e73da7692d5a0aec3339a22a9f"
+      },
+      "alt_hashes": {
+        "r0_next_x": {
+          "base_key": "r0_next_x",
+          "hash": "1469493deb16808d1951b89f0c02b8e523fd8de6b77cd199f7952d7f3f16a5b4"
+        },
+        "r1_next_x": {
+          "base_key": "r1_next_x",
+          "hash": "cf8983c24f26807fe464d10f212912d20bbb6a6dbcc984b628e9bf393575c96a"
+        },
+        "r2_next_x": {
+          "base_key": "r2_next_x",
+          "hash": "d16d08778a265bc797711688d509abe709086070aa83bb038ddce9ab79db33e4"
+        },
+        "r3_next_x": {
+          "base_key": "r3_next_x",
+          "hash": "164d7cb9cbefc71713a4d17e83d4dda15bbb8516f858842e549d0f96b7d8434a"
+        },
+        "r4_next_x": {
+          "base_key": "r4_next_x",
+          "hash": "6492137c315af73e8c5876c0537b9fcc78ceaaeb5e0adfe990d86e13bd102284"
+        },
+        "r5_next_x": {
+          "base_key": "r5_next_x",
+          "hash": "623991aedacb167f2e3370edac22608e6d70fe2a1476717471e41e6240ac8c0d"
+        },
+        "r0_ri": {
+          "base_key": "r0_ri",
+          "hash": "5f7a8a6a2479e04d8aa37f97c7f68c2aacf69d94ad14bba49ef9719b3521d7c1"
+        },
+        "r1_ri": {
+          "base_key": "r1_ri",
+          "hash": "ed85e35695adcf9a97c719756d7789e65c09c57661ee9de43cc3e2405fe4ce0e"
+        },
+        "r2_ri": {
+          "base_key": "r2_ri",
+          "hash": "c9cf431407a9457cfd2d0941a5c8ff44a810bf54e8706aa5094835be96ab928f"
+        },
+        "r3_ri": {
+          "base_key": "r3_ri",
+          "hash": "37eca1d753cb763f0866710fffe2ea79a5688825ff4e11c264cdfac2318bb1d1"
+        },
+        "r4_ri": {
+          "base_key": "r4_ri",
+          "hash": "9012fae87c43c19972c4986d6c9c2f83953014270ccd37013a252c75726a4b37"
+        },
+        "r5_ri": {
+          "base_key": "r5_ri",
+          "hash": "0a341d505df4707941b7c5af6a1dbd0c8e75283ea6f6fbe04f2f36704b61bbec"
+        }
+      },
+      "feedback": "Consultar PDF Diapositivas 7 a 9. Detección de colapso a punto fijo repetitivo en 100."
+    },
+    "3": {
+      "title": "Ejercicio 03: Productos Medios",
+      "alumno": "Alumno #3",
+      "weight": 100,
+      "hashes": {
+        "r0_yi": "521cc790e5f0aba2cb78db98a5cf1ec9f2a4f514fb43c8f598cbd0de2bfbe189",
+        "r0_next_x": "14e2cb8bf5fc8e600f74bb57605c6055ae7e5c639806b724af251e49c567b4e7",
+        "r0_ri": "dc7e8a20782da95353e4da6a7f15203a43d051ec229156eb89ad924a01515cae",
+        "r1_yi": "e2a1c32bb593c31b7eac24e09ad041862e9f8551454bf57a0947a4b48d863461",
+        "r1_next_x": "7312a0685776a2c1f24a29a95b8664c9e6accfde45719f84e9bb145a784f8e52",
+        "r1_ri": "fc01043d5ae0d7c29c9cc9aa0f402c78b529283396f860c35282cc34c7a2377b",
+        "r2_yi": "6dbff4dbbd005948050c8be0cccb029fccfb188579ef39cea0fc03d1df261273",
+        "r2_next_x": "3046f7bd93a2030402195b5d82ab33c881fe04d912a89d0e64bc452645e19d4b",
+        "r2_ri": "485b97b247aea9e73011d8757fb99b6456ff1671c2b16fa1d39477d33e639173",
+        "r3_yi": "ac7f01f4108156b95970788c47af0d74bc0b3bec1d43f46dbd182393b1e94508",
+        "r3_next_x": "42fa72068737072ae30103f0929668be2543bc4f64deb3bc643169582b9c9b80",
+        "r3_ri": "280073f024febb1e92f9ebd254debf97350e86328d9ff29e9d6b2af40fc06a6f",
+        "r4_yi": "059b27c603afacbd86d6da156000fb20f9129e79c7eb5b15b456f068e96173dc",
+        "r4_next_x": "ab1efab1cffb47d55fe5dbd92220c717caf106417fc62cb4383e424867a13853",
+        "r4_ri": "fe96df5af832e3f563c71fef8c6ad349923972751221f49ddd3a3a34ea8d24ee",
+        "r5_yi": "a320d8139f2732517b7831769170b2f97899b37232e870d36cc78e8c046f34a5",
+        "r5_next_x": "37be4bf1e2f2eb2a3205d4d1f47d9da8ae085ad74de32080d4ac1497c8ba1e36",
+        "r5_ri": "759cb0bb6e9e398eac0f06fd896c41849c2351cc6fcf44476418ea6c47098a56"
+      },
+      "alt_hashes": {
+        "r0_ri": {
+          "base_key": "r0_ri",
+          "hash": "b531b66a9177da931e422dda6ac561028df44e9d72783c2864b2751c4014ce62"
+        },
+        "r1_ri": {
+          "base_key": "r1_ri",
+          "hash": "696da3cd19a4c95f9df31e8c9ae5dddcf613582f0fd78f27f7792209cf5b06fd"
+        }
+      },
+      "feedback": "Consultar PDF Diapositivas 10 a 12. Multiplicación sucesiva y ventana deslizante."
+    },
+    "4": {
+      "title": "Ejercicio 04: Multiplicador Constante",
+      "alumno": "Alumno #4",
+      "weight": 100,
+      "hashes": {
+        "r0_yi": "db9f5321c9159958ab7c0a55cf355c79a183e57017d254ce4b4fb93d9de2aff4",
+        "r0_next_x": "db64e091a62d0a35b76294f0dc4ce25c1a7d43ecc81a92eb8621c0ef559696a4",
+        "r0_ri": "3622afc32c18e4310fd491e9ed34569e934be99f46d8b625e0dbcff1eb943723",
+        "r1_yi": "130c345a20b6530470e90a1acbd7fd3be21cce92a06247430370cb52721dbbe9",
+        "r1_next_x": "e09aad55ac6a3eb9c7b02eaf6bab6a347791bb328bf3bd1679c7fa6b07f1cde3",
+        "r1_ri": "b73bb2a4b5510dee99fbdf21a0a5079d5824abd1ee03192d449f24f86558f934",
+        "r2_yi": "2770f392c740bd070e29fb81b82a0961a8c50991f8e9a4cf933de2bd2496fe45",
+        "r2_next_x": "b5ad44c03b1968092ad39b6ba57df00a019d4ca697fdc184ac99ec4a454a5a2f",
+        "r2_ri": "809a965e00d49794f3b4d91635fef91c3ed8f3555fafbfdcfecf59a7c2478953",
+        "r3_yi": "218e31848843a231be00265663084dbe29aa236a6105c363065f9d307b24bfb1",
+        "r3_next_x": "46784491ae7e9a97b42f92748ed216b4d212c8351e94364437db43bb1627ee7e",
+        "r3_ri": "22d16e01dff88afc3749ddbae734601faa5a3d3ddd43801b7f75dc3f1a9797ad",
+        "r4_yi": "ddf175e14af839e4e5870da437c991b6ef6ef5d4d723ba230f8bf620e40ab170",
+        "r4_next_x": "28e5214044e3ebde6a552efd2c76037235691b7f95e58c5d48353bf2ccd8c87d",
+        "r4_ri": "554a2e709d2a51f56d2751686b56b00032ab3b29ffe74d5de8e192623b6bfc75",
+        "r5_yi": "84de0999f731ded6537f61215989d8b31013cc07de2a7e3f9ee84469298888e0",
+        "r5_next_x": "a1da6c0a8de96703f4bd1ff69680404d6056a04db8217e7f4b037fe6677153bc",
+        "r5_ri": "7f1e9411044e057c673fcb5f512f7f436a2f77dac650e7f1b9d29566911449c7"
+      },
+      "alt_hashes": {
+        "r5_next_x": {
+          "base_key": "r5_next_x",
+          "hash": "ff69e705d2a53b13bf573bbc072096ef94ed7545419ce8ea34060042491c506a"
+        }
+      },
+      "feedback": "Consultar PDF Diapositivas 13 a 15. Mantener constante 'a' fija y actualizar solo Xi."
+    },
+    "5": {
+      "title": "Ejercicio 05: Congruencial Lineal Mixto (Hull-Dobell)",
+      "alumno": "Alumno #5",
+      "weight": 100,
+      "hashes": {
+        "q_hd1": "9c86e7592e4e72fabe12f7949bd622f0dcd181ae36711e9bf9e6cf6908ab7355",
+        "q_hd2": "fe05d926e53d857acf8e57590ad615affdcb15009a455ce134368937e540a92c",
+        "q_hd3": "f3157dde44e41e015dc3c9a3219882d52252a0aece4a8a82e95e77e2a7e199c6",
+        "r0_expr": "93cb95ec3a93673393ae06d09ca9bb7840a9ea59a61b504b513cb603317e60e8",
+        "r0_next_x": "3561c3512e293090bb7ba3b6390cb5454a9f48cfaff889c707cbb5315254359b",
+        "r0_ri": "a5ba1207c2052372532e99ef2dc214029e66cc9a1d1dbd873b3158a8a2ae84a9",
+        "r1_expr": "989e7fc16cb39ebdf564688a465944b2d5ad772e8b3f86724c1f554257f44557",
+        "r1_next_x": "cf6b15c2bcb09abb0a5d9da8d38f1c657c45670872498a8f0d13ca00383d10a9",
+        "r1_ri": "d045b79fe0a8479cb02c4ae78e6835296650dbe87b4b781f0d917f27c8f8bc87",
+        "r2_expr": "330569515dc6cca1358234f93c5513c2d20a2b3f5016ea1400ba04a542316e9c",
+        "r2_next_x": "c64c6a3b37bb1620507a4bee929ce1635bcb3a1945f955c6ace4fb7478a1cad6",
+        "r2_ri": "ae0c27fd5a442e97cf33e653381b04873de342eaec62b7a0cc8d91a69711f6f4",
+        "r3_expr": "d27b2c698d374c72f5c66ab11c8943cf47b85219dce070b6d231ea2a174579be",
+        "r3_next_x": "963de3a88a808eada6d9c3f2794b04a3d008af7338e253bf908079e809306121",
+        "r3_ri": "96ffd005edfe9f2256802a2034d83f365efa30eafb4e17599b17c3ff1d4a9346",
+        "r4_expr": "1b9f75fc59d4895de51019343390c36e09087bbd71398b8f5f4ab7d75e88067d",
+        "r4_next_x": "6778340b4920c834c861d71c4e6d3863e4dab13c22a376c93aea94aa8e7e2c45",
+        "r4_ri": "dfdec84aa7ca7e8f21b34707b1679de9c08622da0ac84b5c6f0a5377a4c4bf62",
+        "r5_expr": "de0d1fa57aab14512bbe4dc7a3cb7458f57779dd6517249e04db2e9f4ccbae63",
+        "r5_next_x": "a595cdf29b6cf637968d9d91fe2e0151eb2e6bd6989843351cb793d2a9178574",
+        "r5_ri": "6ec9d840222f878160d241a36ddf15e288846e452db5813bd3eabca63e46510d",
+        "r6_expr": "bdef68a9a363645ee11f8f48786c9a21ec23848d8802d80bf2851df5a30c0bc9",
+        "r6_next_x": "4442411398b4f246200c84c86ef6f3d8192a874f064ed6fd5504dbf871b1097c",
+        "r6_ri": "0097656eee2290b0f0ccb76174c143087ff1519ec0ce3e8c4b6f663265f03af0",
+        "r7_expr": "b7f86970eded40171a52323ee6f9b9c7d4316d0851f709490f4cae6435a4be34",
+        "r7_next_x": "77b802eeaa95182c96b843efcff651352841b37504f34c85ab5796e24b90a5ed",
+        "r7_ri": "1168b4e853134202cbe8145d4ef4e760dffad036ff1c5cba41111fef9161d0f8"
+      },
+      "alt_hashes": {
+        "q_hd1": {
+          "base_key": "q_hd1",
+          "hash": "3cbbd214608f1f15194bebd370f37b2631a14d844293426fedd79cac2eb077a0"
+        },
+        "q_hd2": {
+          "base_key": "q_hd2",
+          "hash": "2b1be417dce3648f69d2221f6f0ff8d2d8c054f3d3b24005d3dc0298298edb94"
+        },
+        "q_hd3": {
+          "base_key": "q_hd3",
+          "hash": "8ec05bc85017a802a06b8fe7c5442a2830b6de41eee4dcb117099be698a9cede"
+        },
+        "r1_ri": {
+          "base_key": "r1_ri",
+          "hash": "89bcb70b3f5177fe83b366c6cae2451f1c944dde870e73282f4e042c78bf58e3"
+        },
+        "r7_ri": {
+          "base_key": "r7_ri",
+          "hash": "03bafe32c93d68b2e20f9fbecf7c8f106d0036a2ab408f71588b88870857ef72"
+        },
+        "r7_ri_alt": {
+          "base_key": "r7_ri",
+          "hash": "3a441e1f91a0a65ade46ea071eee16616e9843c335fc314216e782bd7a78dd9f"
+        }
+      },
+      "feedback": "Consultar PDF Diapositivas 16 a 21. Teorema de Hull-Dobell para período completo."
+    },
+    "6": {
+      "title": "Ejercicio 06: Congruencial Lineal (Período Corto)",
+      "alumno": "Alumno #6",
+      "weight": 100,
+      "hashes": {
+        "q_fail_mcd": "6e191de5cee8b645dd05a18e282e2a3bca36dd3401cc9e03a835a81e21faad87",
+        "q_fail_period": "ec60968f35349d13091068dfc795077cc305844d4047b31fd8cb95f9087b1d38",
+        "r0_expr": "d5e9f4f428915d34c6755c9e921bfd15432493b0a153b8b69e063744313db038",
+        "r0_next_x": "e48d08b8258c8258cfeef4082dbb76a1056ce9c5fddc6383745f1dfdc5f730a8",
+        "r0_ri": "3fe32aea75aa8eb65281a15c776d146c11008aae0acb639a610518e282671f64",
+        "r1_expr": "376a028c03cfa7bfa8c37dba1cf6aad509f26a83f1efd2bfcecee823ef2edca7",
+        "r1_next_x": "4ea83bf3c000fecc31283f0c2c4496fa58ad3bde9008475749d244067baf60f2",
+        "r1_ri": "cc025c5b12a7b1ed49b5b9b7f34c1b441d28698d81d2dec20dcb01388b0c9433",
+        "r2_expr": "fbb3ded67731e909a81ca1c64de45e79e3c5a45ff7f1286967481b20caa95647",
+        "r2_next_x": "809409b1d277735b4707fcdbf2ff8e5eb2219bd1d8fdd37d24f42f8e6653bede",
+        "r2_ri": "0e7fb882f461294382fb3f9f9d8a08f7136342074bb1376bb423900304e65aeb",
+        "r3_expr": "1d51a63be4e8c633f987822c26098b3299069992feff61f7139fcce537e87331",
+        "r3_next_x": "6dc19c55047c8906a0d3c21c1311b08953da71f5a9e56523748a4338857df907",
+        "r3_ri": "b00039f3ef942f7062dcd07b533285a46594e45cb531f9310881cdfac0a8222c",
+        "r4_expr": "6a50174b110cdc8a7adc6b9e92979863d2862fa822644fbf9b52392691f73383",
+        "r4_next_x": "da6b9906422dbb9a8772ecf2878cefa66dc68229188fb256d787b13b8b4c3aae",
+        "r4_ri": "74cdae828da9298a4375021098805c439a6a4ee5cab26104af6b70048f19b3a2",
+        "r5_expr": "2e76a3aea7e647ad88673e5b4ce995a33c003f4932e36da391d8103a85c7ad66",
+        "r5_next_x": "720502048959826fb73e9029f9fd846e496f0ac7f73405c65c19dc771434312b",
+        "r5_ri": "fb72d701e86424799e0e153402ebaa381217b37ab2623a5d8d956e8e279b26fd"
+      },
+      "alt_hashes": {
+        "r3_ri": {
+          "base_key": "r3_ri",
+          "hash": "715b2f3502222129e49777f1df21a3bbd406f81a3e5e07f58cf532f84d4eaed2"
+        }
+      },
+      "feedback": "Consultar PDF Diapositivas 16 a 21. MCD(12, 16)=4 viola Hull-Dobell, subciclo P=4."
+    },
+    "7": {
+      "title": "Ejercicio 07: Congruencial Multiplicativo",
+      "alumno": "Alumno #7",
+      "weight": 100,
+      "hashes": {
+        "q_mcg_pmax": "eff9bb18c6ef7938df6e0e0e08f97f9ed58495ce70f7e7af547c6e6c80396a1b",
+        "r0_expr": "82aa70400e3af56eaf3d6496d317aca7fe047e5fd0287831480ff48f930bd64f",
+        "r0_next_x": "f8426ef6eea00f4dbbd49fce906acd35650911ed44610465bb8766edd3722b92",
+        "r0_ri": "3ae36b7c95f679dc0dd51f1a60d2d50334e238c6b1338db744f2a9d7ff4c8c3e",
+        "r1_expr": "3cfb821c76498c8951555f741c48bc8fe3e7a49a59d598f7d0d97832144bbaf9",
+        "r1_next_x": "b52aad107475b221d8acafe324a1f530eeca4219c9219d15f9edc8cb5bbebb65",
+        "r1_ri": "f1dab5cb5898b2d3ed1b7c3e1a68f969cf2ba5a3cccf2757f104c9524aad7408",
+        "r2_expr": "cc24606cc890f9549b10696eb2cdad481742168666376dd5fe9513b6f92701dc",
+        "r2_next_x": "08f25c45cb5e917f38c4b677febadf56217f64105a806cec9940f283456b47a7",
+        "r2_ri": "16bf006c9f79c1646322b467e40d1a3926e6a09ec301f8ad0696ba7b9bb30782",
+        "r3_expr": "14c37b7be7fa6ac330a75fc237928e79bcecf7ea0ea9a116fd254b005f9b9c6e",
+        "r3_next_x": "01ad562eacf96046af3e327d7ee0cd89751a72b0a23b19d670846a5489b04401",
+        "r3_ri": "8a76a56b9b0ef73413c3fc3f4b0400d176a1911c09c941e7c00ecc9cd13b9c2d",
+        "r4_expr": "2d3cdf3b2c2171a4825825cb83db9f09d96f3aad7a93748eb54d2ab34835c1ad",
+        "r4_next_x": "766c26f6aa1156530cd79aad2fe666b3cbaa342d09d079515992d016eb033677",
+        "r4_ri": "a999ef5a6ef2435a4b23109e319cfda44f7463e30ffe543cb747aeaca2335c79",
+        "r5_expr": "e3380139aa819b79705c537f6f343a91dd6c55a23bfb4fa02894bb0ee26c0489",
+        "r5_next_x": "b8f320f9fcf59c370900a167cdf2dd522820fda601004a527d3f507efc736f76",
+        "r5_ri": "35a918634d503fb30e89ec3e921bf78ebe32b381aa1c3075e284eef985c8fa1e"
+      },
+      "alt_hashes": {},
+      "feedback": "Consultar PDF Diapositivas 22 a 24. Para m=2^g (g>=3), período máximo P = m/4."
+    },
+    "8": {
+      "title": "Ejercicio 08: Congruencial Aditivo & Blum-Blum-Shub",
+      "alumno": "Alumno #8",
+      "weight": 100,
+      "hashes": {
+        "q_bbs_cond": "9584faa1da044b5f4d8517c8548545e6194647372ef561c7129ef3ddb082e8ea",
+        "q_bbs_calc": "3dd38af144bd1291355249ee73016bacfc453a5705c50bf910858ca24fc4841b",
+        "r0_expr": "205c5f0e6e886cea735e665f669c5f0364a5b03c2978fbfe9e5ad75533235e77",
+        "r0_next_x": "713d30320777842f73e4790e9d08e1ebd5312f336c2e2b412b4ca09e5dba7dca",
+        "r0_ri": "4edd0c877ad9f2961229a2a595fd30a8a9f214a01249064b62eaf3d93d6ac330",
+        "r1_expr": "f26700546936d0b976aff98b11eb7ac4c43ce363298fdb34bcfaafc78cbb43e6",
+        "r1_next_x": "643c82458e1ef2732cb521d044244a95eb62bacef9e50933bb25cb5e9c0e54da",
+        "r1_ri": "f63c5bb65df598fa5f035342adfc4c8aae2bf45e8f2b4529547e1ce014306fff",
+        "r2_expr": "c23caac5821e4c5b400d7d0dc7079e804860474b99fa0576e3c60ecfb4a05313",
+        "r2_next_x": "cfa0babbc9b8be6f54a56ad1e8a34e7c7b878b6467ba9001867b1b4ebba4c67e",
+        "r2_ri": "7413cee7b4c43c65c915deb81e3ecc21e7a4e01c7d1dbef09c6537ccc7e39728",
+        "r3_expr": "cc5fe7484f458d15d347105aefbecf9f1e560977ac2bfdfa4dd06f2e087d645c",
+        "r3_next_x": "1a358b76afadd638070dbcfc24d4ab204ab45dc297ec2e7b0fe9777908e28635",
+        "r3_ri": "a2faef3ca20bff33850c1842b904ed0e6eac9408b96e36ba46aefda1e21594ce",
+        "r4_expr": "0afeaf20335586d8bb4050f2f72417e6be2ffcb6fdad6235bf911937abebbd44",
+        "r4_next_x": "c5397a84ad791b1a2fdc72965afcb965e6f14f7537d1c01bfd42b9ee7dbcacac",
+        "r4_ri": "8915ebe4d9587149af546ace9bdb7da985d30517e42a1c092e066a14860a0078",
+        "r5_expr": "d5ed68baa09ada9f37dce79c7d7981f9954b358d0c8d8b4d13c41e467e5f8984",
+        "r5_next_x": "f5e1103eb5d39736d5d8a35257f8e56c458b913f2941f6fc5233e66c254e407d",
+        "r5_ri": "4a900441d0b6bdaa50e69badf3dbb3ec72042884c918c951dda0534f34f0b645"
+      },
+      "alt_hashes": {
+        "q_bbs_cond": {
+          "base_key": "q_bbs_cond",
+          "hash": "6e4a7ade52e12eef1f208bb72bf842f4689ae9c571709fe1b396efa74941fa95"
+        }
+      },
+      "feedback": "Consultar PDF Diapositivas 25 a 27 (Aditivo) y 31 (BBS). Primos de Blum p, q ≡ 3 mod 4."
+    }
+  }
+}
