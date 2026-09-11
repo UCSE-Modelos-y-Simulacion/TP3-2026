@@ -1,0 +1,38 @@
+{
+  "materia": "Modelos y Simulación",
+  "institucion": "Universidad Católica de Santiago del Estero (UCSE)",
+  "cicloLectivo": 2026,
+  "trabajoPractico": "TP Nº 3 - Generación de Números Pseudoaleatorios",
+  "alumnoAsignado": "Alumno #6",
+  "ejercicioId": 6,
+  "tituloEjercicio": "Congruencial Lineal: Falla de Hull-Dobell & Período Incompleto",
+  "estudiante": {
+    "nombreCompleto": "Samara Nur Zamar",
+    "legajoODni": "46401692"
+  },
+  "calificacion": "100 / 100 Pts (Aprobado)",
+  "timestamp": "2026-09-11T22:22:17.653Z",
+  "respuestasRegistradas": {
+    "q_fail_mcd": "4",
+    "q_fail_period": "4",
+    "r0_expr": "42",
+    "r0_next_x": "10",
+    "r0_ri": "0.6667",
+    "r1_expr": "62",
+    "r1_next_x": "14",
+    "r1_ri": "0.9333",
+    "r2_expr": "82",
+    "r2_next_x": "2",
+    "r2_ri": "0.1333",
+    "r3_expr": "22",
+    "r3_next_x": "6",
+    "r3_ri": "0.4",
+    "r4_expr": "42",
+    "r4_next_x": "10",
+    "r4_ri": "0.6667",
+    "r5_expr": "62",
+    "r5_next_x": "14",
+    "r5_ri": "0.9333"
+  },
+  "firmaDigitalSHA256": "4902e192e02365c668490c802eee18a040952e47d1668b1da2818ffe7410c60e"
+}
