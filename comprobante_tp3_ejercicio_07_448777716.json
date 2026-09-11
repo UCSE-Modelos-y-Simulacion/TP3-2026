@@ -1,0 +1,37 @@
+{
+  "materia": "Modelos y Simulación",
+  "institucion": "Universidad Católica de Santiago del Estero (UCSE)",
+  "cicloLectivo": 2026,
+  "trabajoPractico": "TP Nº 3 - Generación de Números Pseudoaleatorios",
+  "alumnoAsignado": "Alumno #7",
+  "ejercicioId": 7,
+  "tituloEjercicio": "Algoritmo Congruencial Multiplicativo",
+  "estudiante": {
+    "nombreCompleto": "Valentin Flores",
+    "legajoODni": "448777716"
+  },
+  "calificacion": "100 / 100 Pts (Aprobado)",
+  "timestamp": "2026-09-11T22:41:19.210Z",
+  "respuestasRegistradas": {
+    "q_mcg_pmax": "16",
+    "r0_expr": "85",
+    "r0_next_x": "21",
+    "r0_ri": "0.3333",
+    "r1_expr": "105",
+    "r1_next_x": "41",
+    "r1_ri": "0.6508",
+    "r2_expr": "205",
+    "r2_next_x": "13",
+    "r2_ri": "0.2063",
+    "r3_expr": "65",
+    "r3_next_x": "1",
+    "r3_ri": "0.0159",
+    "r4_expr": "5",
+    "r4_next_x": "5",
+    "r4_ri": "0.0794",
+    "r5_expr": "25",
+    "r5_next_x": "25",
+    "r5_ri": "0.3968"
+  },
+  "firmaDigitalSHA256": "f2daccf222b2601f836d88b146c4d5e3d074069ed7e09d5b043611a8f9fc559e"
+}
