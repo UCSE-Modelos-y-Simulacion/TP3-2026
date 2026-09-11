@@ -1,0 +1,36 @@
+{
+  "materia": "Modelos y Simulación",
+  "institucion": "Universidad Católica de Santiago del Estero (UCSE)",
+  "cicloLectivo": 2026,
+  "trabajoPractico": "TP Nº 3 - Generación de Números Pseudoaleatorios",
+  "alumnoAsignado": "Alumno #3",
+  "ejercicioId": 3,
+  "tituloEjercicio": "Algoritmo de Productos Medios",
+  "estudiante": {
+    "nombreCompleto": "Zoe Pereyra",
+    "legajoODni": "45172500"
+  },
+  "calificacion": "100 / 100 Pts (Aprobado)",
+  "timestamp": "2026-09-11T22:23:21.849Z",
+  "respuestasRegistradas": {
+    "r0_yi": "28756010",
+    "r0_next_x": "7560",
+    "r0_ri": "0.7560",
+    "r1_yi": "43349040",
+    "r1_next_x": "3490",
+    "r1_ri": "0.3490",
+    "r2_yi": "26384400",
+    "r2_next_x": "3844",
+    "r2_ri": "0,3844",
+    "r3_yi": "13415560",
+    "r3_next_x": "4155",
+    "r3_ri": "0,4155",
+    "r4_yi": "15971820",
+    "r4_next_x": "9718",
+    "r4_ri": "0,9718",
+    "r5_yi": "40378290",
+    "r5_next_x": "3782",
+    "r5_ri": "0,3782"
+  },
+  "firmaDigitalSHA256": "2ff2c9774fc21d69df3c0ec6127522ae15e704c4d9dc7b66fca9421527ba6fec"
+}
