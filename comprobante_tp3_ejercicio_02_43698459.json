@@ -1,0 +1,38 @@
+{
+  "materia": "Modelos y Simulación",
+  "institucion": "Universidad Católica de Santiago del Estero (UCSE)",
+  "cicloLectivo": 2026,
+  "trabajoPractico": "TP Nº 3 - Generación de Números Pseudoaleatorios",
+  "alumnoAsignado": "Alumno #2",
+  "ejercicioId": 2,
+  "tituloEjercicio": "Cuadrados Medios: Fenómeno de Degeneración",
+  "estudiante": {
+    "nombreCompleto": "Martin Sadir",
+    "legajoODni": "43698459"
+  },
+  "calificacion": "100 / 100 Pts (Aprobado)",
+  "timestamp": "2026-09-11T22:31:29.107Z",
+  "respuestasRegistradas": {
+    "q_degen_iter": "1",
+    "q_degen_valor": "100",
+    "r0_yi": "26010000",
+    "r0_next_x": "0100",
+    "r0_ri": "0,0100",
+    "r1_yi": "00010000",
+    "r1_next_x": "0100",
+    "r1_ri": "0,0100",
+    "r2_yi": "00010000",
+    "r2_next_x": "0100",
+    "r2_ri": "0,0100",
+    "r3_yi": "00010000",
+    "r3_next_x": "0100",
+    "r3_ri": "0,0100",
+    "r4_yi": "00010000",
+    "r4_next_x": "0100",
+    "r4_ri": "0,0100",
+    "r5_yi": "00010000",
+    "r5_next_x": "0100",
+    "r5_ri": "0,0100"
+  },
+  "firmaDigitalSHA256": "03d3ead08a9caf38c2eabaf7899a363ea255a84686c269b63ca50c618a3f4822"
+}
