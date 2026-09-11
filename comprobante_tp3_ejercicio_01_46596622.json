@@ -1,0 +1,42 @@
+{
+  "materia": "Modelos y Simulación",
+  "institucion": "Universidad Católica de Santiago del Estero (UCSE)",
+  "cicloLectivo": 2026,
+  "trabajoPractico": "TP Nº 3 - Generación de Números Pseudoaleatorios",
+  "alumnoAsignado": "Alumno #1",
+  "ejercicioId": 1,
+  "tituloEjercicio": "Algoritmo de Cuadrados Medios (Von Neumann)",
+  "estudiante": {
+    "nombreCompleto": "Gino Grosso",
+    "legajoODni": "46596622"
+  },
+  "calificacion": "100 / 100 Pts (Aprobado)",
+  "timestamp": "2026-09-11T22:34:45.083Z",
+  "respuestasRegistradas": {
+    "r0_yi": "32890225",
+    "r0_next_x": "8902",
+    "r0_ri": "0.8902",
+    "r1_yi": "79245604",
+    "r1_next_x": "2456",
+    "r1_ri": "0.2456",
+    "r2_yi": "06031936",
+    "r2_next_x": "0319",
+    "r2_ri": "0.0319",
+    "r3_yi": "00101761",
+    "r3_next_x": "1017",
+    "r3_ri": "0.1017",
+    "r4_yi": "01034289",
+    "r4_next_x": "0342",
+    "r4_ri": "0.0342",
+    "r5_yi": "00116964",
+    "r5_next_x": "1169",
+    "r5_ri": "0.1169",
+    "r6_yi": "01366561",
+    "r6_next_x": "3665",
+    "r6_ri": "0.3665",
+    "r7_yi": "13432225",
+    "r7_next_x": "4322",
+    "r7_ri": "0.4322"
+  },
+  "firmaDigitalSHA256": "c12f3eb8b9994bc4d641f3e157db19a2b08a02c0a2f1129c6f33d8c0145bfab9"
+}
