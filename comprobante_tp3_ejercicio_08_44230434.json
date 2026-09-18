@@ -1,0 +1,38 @@
+{
+  "materia": "Modelos y Simulación",
+  "institucion": "Universidad Católica de Santiago del Estero (UCSE)",
+  "cicloLectivo": 2026,
+  "trabajoPractico": "TP Nº 3 - Generación de Números Pseudoaleatorios",
+  "alumnoAsignado": "Alumno #8",
+  "ejercicioId": 8,
+  "tituloEjercicio": "Algoritmos Congruenciales Especiales: Aditivo & BBS",
+  "estudiante": {
+    "nombreCompleto": "lucas alvaro vilca",
+    "legajoODni": "44230434"
+  },
+  "calificacion": "100 / 100 Pts (Aprobado)",
+  "timestamp": "2026-09-18T20:56:57.589Z",
+  "respuestasRegistradas": {
+    "q_bbs_cond": "Sí",
+    "q_bbs_calc": "4",
+    "r0_expr": "134",
+    "r0_next_x": "34",
+    "r0_ri": "0.3434",
+    "r1_expr": "123",
+    "r1_next_x": "23",
+    "r1_ri": "0.2323",
+    "r2_expr": "121",
+    "r2_next_x": "21",
+    "r2_ri": "0.2121",
+    "r3_expr": "24",
+    "r3_next_x": "24",
+    "r3_ri": "0.2424",
+    "r4_expr": "93",
+    "r4_next_x": "93",
+    "r4_ri": "0.9394",
+    "r5_expr": "127",
+    "r5_next_x": "27",
+    "r5_ri": "0.2727"
+  },
+  "firmaDigitalSHA256": "aa1d359822cd1f502846d903342225066d3a4bd417b8b3b227b6b5309706262c"
+}
